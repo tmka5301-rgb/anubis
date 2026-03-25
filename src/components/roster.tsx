@@ -91,9 +91,7 @@ const PlayerCard: React.FC<PlayerCardProps> = ({
 export default function Roster() {
   return (
     <div className="bg-black p-10 flex flex-wrap gap-10 justify-center">
-      {players
-        .map((p, index) => <PlayerCard key={index} {...p} />)
-        .slice(0, 15)}
+      {players.map((p, index) => <PlayerCard key={index} {...p} />).slice(0, 5)}
     </div>
   );
 }

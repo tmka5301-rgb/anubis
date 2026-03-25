@@ -1,5 +1,6 @@
 // import Image from "next/image";
 
+import FixturesBoard from "@/components/fixture";
 import Footer from "@/components/footer";
 import Header from "@/components/headers";
 import Main from "@/components/main";
@@ -74,6 +75,7 @@ const page = () => {
       <Header />
       <Main />
       <Roster />
+      <FixturesBoard />
       <Footer />
     </div>
   );

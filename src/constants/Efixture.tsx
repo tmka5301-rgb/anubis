@@ -1,0 +1,82 @@
+export const matches = [
+  { team1: "Anubis", team2: "Id SHOP", score1: "43", score2: "69" },
+  { team1: "Erdeneburen", team2: "Anubis", score1: "42", score2: "47" },
+  {
+    team1: "Anubis",
+    team2: "SS Team",
+    score1: "66",
+    score2: "47",
+  },
+  {
+    team1: "anubis",
+    team2: "gsb capital",
+    score1: "58",
+    score2: "40",
+  },
+  {
+    team1: "Premium sport",
+    team2: "anubis",
+    score1: "64",
+    score2: "69",
+  },
+  {
+    team1: "Erchim",
+    team2: "anubis",
+    score1: "28",
+    score2: "56",
+  },
+  {
+    team1: "Han-altai resources",
+    team2: "anubis",
+    score1: "61",
+    score2: "51",
+  },
+  {
+    team1: "anubis",
+    team2: "chef custom",
+    score1: "57",
+    score2: "49",
+  },
+  {
+    team1: "bb brigada",
+    team2: "anubis",
+    score1: "27",
+    score2: "63",
+  },
+  {
+    team1: "",
+    team2: "",
+    score1: "",
+    score2: "",
+  },
+  {
+    team1: "",
+    team2: "",
+    score1: "",
+    score2: "",
+  },
+  {
+    team1: "",
+    team2: "",
+    score1: "",
+    score2: "",
+  },
+  {
+    team1: "",
+    team2: "",
+    score1: "",
+    score2: "",
+  },
+  {
+    team1: "",
+    team2: "",
+    score1: "",
+    score2: "",
+  },
+  {
+    team1: "",
+    team2: "",
+    score1: "",
+    score2: "",
+  },
+];
