@@ -1,3 +1,4 @@
+import { players } from "@/constants/Eroster";
 import React from "react";
 
 interface PlayerStats {
@@ -22,19 +23,19 @@ const PlayerCard: React.FC<PlayerCardProps> = ({
   stats,
 }) => {
   return (
-    <div className="w-[300px] bg-[#111111] overflow-hidden flex flex-col group cursor-pointer border border-gray-800 hover:border-yellow-500/50 transition-all duration-300">
+    <div className="w-[300px] bg-[#111111] rounded-2xl overflow-hidden flex flex-col group cursor-pointer border border-gray-800 hover:border-yellow-500/50 transition-all duration-300">
       {/* Дээд хэсэг: Зураг болон Нэр */}
       <div className="relative h-[400px] overflow-hidden">
         <img
           src={image}
           alt={name}
-          className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
+          className="w-auto h-auto object-cover  group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
         />
         {/* Градиент эффект */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-transparent to-transparent opacity-90" />
         {/* Нэр болон Байрлал */}
         <div className="absolute bottom-6 left-6 right-6">
-          <h2 className="text-yellow-400 text-4xl font-black italic uppercase leading-none tracking-tighter break-words">
+          <h2 className="text-yellow-400 text-2xl font-black italic uppercase leading-none tracking-tighter break-words">
             {name}
           </h2>
           <div className="mt-4 flex items-center gap-2 border-t border-gray-700 pt-2">
@@ -47,6 +48,9 @@ const PlayerCard: React.FC<PlayerCardProps> = ({
 
       {/* Доод хэсэг: Үзүүлэлтүүд */}
       <div className="p-6 bg-[#181818]">
+        <p className="text-yellow-400 text-xl font-bold pb-2">
+          Last game Statistic:
+        </p>
         <div className="grid grid-cols-3 gap-4 mb-6">
           <div className="flex flex-col">
             <span className="text-gray-500 text-[10px] font-bold uppercase tracking-wider">
@@ -84,23 +88,12 @@ const PlayerCard: React.FC<PlayerCardProps> = ({
 };
 
 // Жишээ болгож 3 карт ашиглах хэсэг
-export default function PlayerList() {
-  const players = [
-    {
-      name: "Anubis Prime",
-      position: "Point Guard",
-      number: "01",
-      image: "/api/placeholder/400/600", // Энд зургаа оруулна уу
-      stats: { ppg: "34.2", ast: "11.5", reb: "6.8" },
-    },
-    // ... бусад тоглогчид
-  ];
-
+export default function Roster() {
   return (
-    <div className="bg-black p-10 flex flex-wrap gap-6 justify-center">
-      {players.map((p, index) => (
-        <PlayerCard key={index} {...p} />
-      ))}
+    <div className="bg-black p-10 flex flex-wrap gap-10 justify-center">
+      {players
+        .map((p, index) => <PlayerCard key={index} {...p} />)
+        .slice(0, 15)}
     </div>
   );
 }

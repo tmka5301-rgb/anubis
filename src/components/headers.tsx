@@ -4,7 +4,7 @@ import { User, ShoppingCart } from "lucide-react";
 const Header: React.FC = () => {
   const navItems = [
     { name: "ROSTER", active: true },
-    { name: "SCHEDULE", active: false },
+    { name: "FIXTURE", active: false },
     { name: "STATS", active: false },
     { name: "HIGHLIGHT", active: false },
     // { name: "STORE", active: false },

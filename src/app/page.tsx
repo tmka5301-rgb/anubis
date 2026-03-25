@@ -2,7 +2,8 @@
 
 import Footer from "@/components/footer";
 import Header from "@/components/headers";
-import PlayerList from "@/components/roster";
+import Main from "@/components/main";
+import Roster from "@/components/roster";
 
 // export default function Home() {
 //   return (
@@ -71,7 +72,8 @@ const page = () => {
   return (
     <div className="p-5 bg-[#FFF4F5] w-min-auto">
       <Header />
-      <PlayerList />
+      <Main />
+      <Roster />
       <Footer />
     </div>
   );
